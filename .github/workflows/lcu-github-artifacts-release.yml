@@ -2,19 +2,19 @@ name: drsaoudimo/mediawiki
 
 on:
   push:
-    branches: [master]
+    branches: [Y]
   pull_request:
-    branches: [master]
+    branches: [Y]
 
 permissions: write-all
 
 env:
   CI: false
-  Branches: master
-  MainBranch: master
+  Branches: Y
+  MainBranch: Y
   NPMRegistry: https://registry.npmjs.org/
-  InstallCommand: npm i
-  BuildCommand: npm run build
+  InstallCommand: apt i
+  BuildCommand: apt-build
   Output: ./
 
 jobs:
